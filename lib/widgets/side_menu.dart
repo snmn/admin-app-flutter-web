@@ -48,6 +48,7 @@ class SideMenu extends StatelessWidget {
                   menuController.changeActiveitemTo(itemName);
                   if(Responsiveness.isSmallScreen(context)){
                     Get.back();
+                    navigationController.navigateTo(itemName);
                     // go to item name route
                   }
 
