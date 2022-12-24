@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 
 class LargeScreen extends StatelessWidget {
   const LargeScreen({super.key});
-
-
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -13,7 +11,10 @@ class LargeScreen extends StatelessWidget {
         const Expanded(child: SideMenu()),
         Expanded(
             flex: 5,
-            child: localNavigator()),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: localNavigator(),
+            )),
 
       ],
     );

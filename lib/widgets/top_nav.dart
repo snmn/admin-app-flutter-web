@@ -1,3 +1,4 @@
+import 'package:adminpannelflutter/constants/controller.dart';
 import 'package:adminpannelflutter/helpers/responsiveness.dart';
 import 'package:flutter/material.dart';
 import '../constants/styles.dart';
@@ -20,10 +21,10 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key) =>
 
       }),
   elevation: 0,
-  backgroundColor: light,
+  backgroundColor: Colors.transparent,
       title: Row(
         children: [
-          Visibility(child: CustomText(text: "Overview", color:
+          Visibility(child: CustomText(text: "KTM SERVICE", color:
           dark,weight: FontWeight.normal,size: 16,)),
           Expanded(child: Container()),
           IconButton(icon: Icon(Icons.settings,color: dark,),onPressed: (){},),

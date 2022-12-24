@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'constants/styles.dart';
+
 void main() {
   Get.put(MenuController());
   Get.put(NavigationController());
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Dashboard Design',
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: light,
         textTheme: GoogleFonts.mulishTextTheme().apply(
           bodyColor: Colors.black,
         ) ,
